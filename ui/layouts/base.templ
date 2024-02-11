@@ -1,0 +1,23 @@
+package layouts
+
+
+templ (l *Layouts) Base() {
+	<!DOCTYPE html>
+	<html lang="en" class="h-full">
+		<head>
+			<meta charset="UTF-8" />
+			<title>{ l.Title }</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1"/>
+			<meta name="language" content="English"/>
+			// <link href="/css/reset.css" rel="stylesheet"/>
+			<link href="/css/style.css" rel="stylesheet"/>
+			// <link rel="icon" type="image/x-icon" href="/img/favicon.ico"/>
+			<script src="/js/htmx.min.js" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"></script>
+		</head>
+		<body>
+			<div class="app-container">
+				{ children... }
+			</div>
+		</body>
+	</html>
+}
